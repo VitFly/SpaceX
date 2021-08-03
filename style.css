@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap');
+
+/* general rules start */
+:root{
+    --white: #fff;
+    --blue: #6495ed;
+}
+h1,h2,h3,h4,h5,h6,p {
+    color: rgba(255, 255, 255,1) 
+}
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    background: url(/img_bgc/Space_Bgck.jpg)  no-repeat fixed;
+    background-size: cover;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+/* general rules end */
+
+
+ /* header */
+.header__menu__main {
+    font-size: 22px;
+    display: flex;
+    justify-content: space-around;  
+}
+.header__menu__main a{ 
+    text-decoration: none;
+    color: var(--white);
+    position: relative;
+	cursor: pointer;
+	line-height: 1.2; 
+}
+.header__menu__main a::after{
+    display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2.8px; /*задаём ширину линии*/
+	background-color: #fff; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.header__menu__main a:hover:after,
+                    a:focus:after{
+                        width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+                    }
+.header__menu{
+    opacity: 0.75;
+}
+.header__menu:hover {
+   opacity: 1;   
+}
+/* header */
+
+/* main */
+.main{
+padding-top: 35px;
+}
+.main__pre__news {
+    text-align: left;
+    padding-left: 2.2%;
+    font-size: 22px;
+    color: #fff;
+}
+.news{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.news__block { 
+}
+.news__block__img img{
+    max-width: 100%;
+
+    border-radius: 15%;
+    width: 300px;
+    height: 300px;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    -o-border-radius: 15%;
+}
+.news__block__text span {
+    position: relative;
+    opacity: 0.6;
+    top: -2.8em;
+    left: 1.5em;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.news__block__text span:hover{
+    opacity: 1;
+}
+/* main */
+
+  .count {
+    padding-top: 3%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.counter{
+    color:var(--white);
+    font-size: 34px;
+    text-align: center;
+}
+/* footer */
+.footer {
+    
+}
+.footer__social {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer__class__ul{
+    list-style-type: none;
+    overflow: hidden;   
+}
+.footer__class__ul a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.footer__class__ul a:hover{
+    color: #fff;
+}
+.li__footer{
+    color: rgb(110, 98, 98);
+}
+@keyframes footerClr {
+    0% {color: #fff;}
+    25%{color: rgb(202, 194, 194);}
+    50%{color: rgb(150, 144, 144);}
+    75%{color: rgb(100, 95, 95);}
+    100%{color: rgb(90, 95, 95);}
+}
+.li__footer__oth:hover {
+    animation: footerClr linear 0.6s ;
+    -webkit-animation: footerClr linear 0.6s ;
+}
+.li__footer__oth:hover{
+    color: rgb(90, 95, 95);
+}
+/* footer */
