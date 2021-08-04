@@ -24,9 +24,12 @@ ul {
 
  /* header */
 .header__menu__main {
+    padding-left: 5%;
+    padding-right: 5%;
     font-size: 22px;
     display: flex;
-    justify-content: space-around;  
+    justify-content: space-between; 
+    align-items: center;
 }
 .header__menu__main a{ 
     text-decoration: none;
@@ -41,7 +44,7 @@ ul {
 	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
 	width: 0;/*задаём длинну линии до наведения курсора*/
 	height: 2.8px; /*задаём ширину линии*/
-	background-color: #fff; /*задаём цвет линии*/
+	background-color: var(--white); /*задаём цвет линии*/
 	content: "";
 	transition: width 0.3s ease-out; /*задаём время анимации*/
 }
@@ -49,7 +52,11 @@ ul {
                     a:focus:after{
                         width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
                     }
+.header__menu__1st{
+    flex-grow: 7;
+}
 .header__menu{
+    flex-grow: 2;
     opacity: 0.75;
 }
 .header__menu:hover {
@@ -64,7 +71,7 @@ padding-top: 35px;
 .main__pre__news {
     text-align: left;
     padding-left: 2.2%;
-    font-size: 22px;
+    font-size: 26px;
     color: #fff;
 }
 .news{
@@ -72,18 +79,15 @@ padding-top: 35px;
     flex-direction: row;
     justify-content: space-around;
 }
-.news__block { 
-}
 .news__block__img img{
     max-width: 100%;
-
-    border-radius: 15%;
+    border-radius: 20%;
     width: 300px;
     height: 300px;
-    -webkit-border-radius: 15%;
-    -moz-border-radius: 15%;
-    -ms-border-radius: 15%;
-    -o-border-radius: 15%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
 }
 .news__block__text span {
     position: relative;
@@ -99,27 +103,35 @@ padding-top: 35px;
 }
 /* main */
 
+ /* counter */
   .count {
     padding-top: 3%;
     padding-bottom: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
+    align-items: center;
+    text-transform: uppercase;
 }
 .counter{
     color:var(--white);
     font-size: 34px;
     text-align: center;
 }
-/* footer */
-.footer {
-    
+.counter__number{
+    font-size: 88px;
 }
+
+/* counter */
+
+
+
+/* footer */
 .footer__social {
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
 }
 .footer__class__ul{
