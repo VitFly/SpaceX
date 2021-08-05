@@ -13,6 +13,7 @@ body{
     font-family: 'Space Grotesk', sans-serif;
     background: url(/img_bgc/Space_Bgck.jpg)  no-repeat fixed;
     background-size: cover;
+    box-sizing: border-box;
 }
 ul {
     list-style-type: none;
@@ -123,7 +124,19 @@ padding-top: 35px;
 }
 
 /* counter */
-
+/* Nil_Armstrong */
+.human_spc {
+    width: 70%;
+    float: left;
+}
+.Nill_armstrong {
+}
+.Nill_armstrong img{
+    width: 500px;
+    height: 600px;
+    width: 100%;
+}
+/* Nil_Armstrong */
 
 
 /* footer */
