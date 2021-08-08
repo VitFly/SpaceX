@@ -60,23 +60,39 @@
   //   console.log(resultFunc);
 
 
-  function getPow(){
-      let PowNum1 = prompt('Введите 1-е число','');
-      let PowNum2 = prompt('Введите 2-е число(возведение в степень)','');
-      let PowMath = Math.pow(PowNum1, PowNum2);
-      alert(PowMath);
-  }
+//   function ask(question, yes, no) {
+//     if (confirm(question)){
+//       yes();
+//     }
+//     else no();
+//   }
+  
+//   ask(   
+//     "Вы согласны?",
+//     function() { alert("Вы согласились."); },
+//     function() { alert("Вы отменили выполнение."); }
+// );
 
-  getPow();
+// function ask(question, yes, no) {
+//   if (confirm(question)) yes()
+//   else no();
+// }
 
-//   getPow(3,6);
+// ask(
+//   "Вы согласны?",
+//   function() { alert("Вы согласились."); },
+//   function() { alert("Вы отменили выполнение."); }
+// );
 
-//   let PowFunc = getPow;
 
-//   pow(3, 2) = 3 * 3 = 9
-// pow(3, 3) = 3 * 3 * 3 = 27
-// pow(1, 100) = 1 * 1 * ...* 1 = 1
 
-    
 
-    
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+ask(
+  "Вы согласны?",
+  () => alert("Вы согласились."),
+  () => alert("Вы отменили выполнение.")
+);
