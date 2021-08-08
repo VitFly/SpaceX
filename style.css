@@ -187,11 +187,10 @@ padding-top: 35px;
     padding-left: 5%;
     padding-right: 5%;
     grid-template-columns: auto auto auto auto;
-
 }
-.DeepSpace_block {  
-    padding: 10px;
+.DeepSpace_block{
     opacity: 0.95;
+    padding: 10px;
 }
 .DeepSpace_block:hover{
     opacity: 1;
