@@ -86,13 +86,20 @@
 
 
 
+// let userName = prompt("Введите имя", "Алиса");
+// let isTeaWanted = confirm("Вы хотите чаю?");
 
-function ask(question, yes, no) {
-  if (confirm(question)) yes()
-  else no();
+// alert( "Посетитель: " + userName ); // Алиса
+// alert( "Чай: " + isTeaWanted ); // true
+
+
+function showDialog(age,name){
+
+  let age = prompt('Введите ваш позраст','');
+
+  let name = prompt('Введите ваше Имя','');
+
+
 }
-ask(
-  "Вы согласны?",
-  () => alert("Вы согласились."),
-  () => alert("Вы отменили выполнение.")
-);
+
+  showDialog(20," Vitalik");
