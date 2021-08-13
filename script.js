@@ -93,13 +93,50 @@
 // alert( "Чай: " + isTeaWanted ); // true
 
 
-function showDialog(age,name){
+// function showDialog(age,name){
 
-  let age = prompt('Введите ваш позраст','');
+//   let age = prompt('Введите ваш позраст','');
 
-  let name = prompt('Введите ваше Имя','');
+//   let name = prompt('Введите ваше Имя','');
 
 
-}
+// }
 
-  showDialog(20," Vitalik");
+//   showDialog(20," Vitalik");
+
+  // let obj1 = {
+
+  // }
+
+  // console.log(typeof(obj1));
+  // let fruit = prompt("Какой фрукт купить?", "apple");
+  // let bag = {};
+  
+  // // имя свойства будет взято из переменной fruit
+  // bag[fruit] = 5;
+
+  // alert(bag[fruit]);
+
+  // let user = {
+  //   name: 'John',
+  //   surname: 'Smith',
+  // }
+
+  // user.name = 'Pete';
+
+  // delete user.name;
+
+  // console.log(user.name);
+
+  let obj1 = {
+
+  }
+
+  function isEmpty(obj) {
+     for (let key in obj){
+       return false;
+     }
+      return true;
+  }
+
+  let result = alert(isEmpty(obj1));
