@@ -102,41 +102,19 @@
 
 // }
 
-//   showDialog(20," Vitalik");
 
-  // let obj1 = {
 
-  // }
-
-  // console.log(typeof(obj1));
-  // let fruit = prompt("Какой фрукт купить?", "apple");
-  // let bag = {};
-  
-  // // имя свойства будет взято из переменной fruit
-  // bag[fruit] = 5;
-
-  // alert(bag[fruit]);
-
-  // let user = {
-  //   name: 'John',
-  //   surname: 'Smith',
-  // }
-
-  // user.name = 'Pete';
-
-  // delete user.name;
-
-  // console.log(user.name);
-
-  let obj1 = {
-
+  let Sobj = {
   }
 
-  function isEmpty(obj) {
-     for (let key in obj){
-       return false;
-     }
-      return true;
+
+  function isEmpty(obj){
+      for( let key in obj){
+        return false
+      }
+        return true
   }
 
-  let result = alert(isEmpty(obj1));
+  let a1 =  isEmpty(Sobj);
+
+  console.log(a1);
