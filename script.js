@@ -1,4 +1,4 @@
-'use strict'
+// 'use strict'
 
 // let userName = prompt('Кто там?', '');
 
@@ -104,17 +104,116 @@
 
 
 
-  let Sobj = {
-  }
+  // let Sobj = {
+  // }
 
 
-  function isEmpty(obj){
-      for( let key in obj){
-        return false
-      }
-        return true
-  }
+  // function isEmpty(obj){
+  //     for( let key in obj){
+  //       return false
+  //     }
+  //       return true
+  // }
 
-  let a1 =  isEmpty(Sobj);
+  // let a1 =  isEmpty(Sobj);
 
-  console.log(a1);
+  // console.log(a1);
+
+
+//  let salary = {
+//    Michail: 1200, 
+//    Ilya: 1350, 
+//    Ruslan: 1700, 
+//    Vitaliy: 800, 
+
+//  }
+
+//  let sum = 0;
+
+//  for( let key in salary){
+//    sum += salary[key];
+//  }
+
+//  console.log(sum);
+
+// let user = {
+//   name: "Джон",
+//   go: function() { alert(this.name) }
+// };
+
+// (user.go)()
+
+// function makeUser() {
+//   return {
+//     name: "Джон",
+//     ref: 'undefi'
+//   };
+// };
+
+// let user = makeUser();
+
+//    console.log(user.ref);   
+
+
+
+
+    // Калькулятор!!
+
+
+  //  let calculator = {
+  //   sum() {
+  //     return this.a + this.b;
+  //   },
+  
+  //   mul() {
+  //     return this.a * this.b;
+  //   },
+  
+  //   read() {
+  //     this.a = +prompt('a?', 0);
+  //     this.b = +prompt('b?', 0);
+  //   }
+  // };
+  
+  // calculator.read();
+  // alert( calculator.sum() );
+  // alert( calculator.mul() );
+
+      // let num1 =( Math.round(6.33 * 10) / 10  ) 
+
+      // console.log(num1);
+
+      // function random(min, max) {
+      //   return min + Math.random() * (max - min);
+      // }
+      
+      // alert( random(1, 5) );
+      // alert( random(1, 5) );
+      // alert( random(1, 5) );
+
+      // String !!! // 
+      
+    //  let styles = ['Джас', 'Блюз'];
+
+    //  styles.push('Рок-н-ролл');
+
+    //  styles[(Math.floor(styles.length-1))/2 ] = 'Классика'
+
+    // let DelElem = styles.shift();
+
+    // console.log(DelElem);
+
+    // styles.unshift('Рэп','Рэгби');
+
+    // console.log(styles);
+
+    let arr = ["a", "b"];
+
+arr.push(function() {
+  alert( this );
+})
+
+arr[2](); // ?
+
+
+      
